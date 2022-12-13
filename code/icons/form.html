@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <div class="form1">
+    <form action="#">
+    <label>User Name</label><br>
+    <input type="text" name="username" id="01" class="userid" placeholder="Enter your name"  required><br><br>
+    <label>Password</label><br>
+    <input type="password" name="password" id="02" class="password"placeholder="Enter your password" maxlength="10" pattern="[0-9]{10}" required><br><br>
+    <label>Brach</label><br>
+    <input type="radio" name="branch" class="branch" >EEE
+    <input type="radio" name="branch" class="branch" >ECE
+    <input type="radio" name="branch" class="branch" >CSE<br><br>
+    <label>subjects</label><br>
+    <input type="checkbox" name="branch1" class="branch" >JAVA SCRIPT
+    <input type="checkbox" name="branch2" class="branch" >HTML
+    <input type="checkbox" name="branch3" class="branch" >CSS<br><br>
+
+    <label>University</label><br>
+    <input id="university name" type="text"  name = "UNIVERSITY" List="UNIVERSITY"/>
+    <datalist id="UNIVERSITY">  
+    <option value="JNTUH">
+    <option value="JNTUK">
+    <option value="BITS BILLANI">
+    </datalist><br><br>
+
+    <button type="submit" class="submit" onClick="myfun1()">submit</button>
+    <button type="reset" class="reset" onClick="myfun2()">Reset</button>
+    </form>
+   
+</div>
+
+<script>
+
+    function myfun2(){
+    var value1 = document.getElementById("01").value=" ";
+    var value2 = document.getElementById("02").value=" ";
+    var value3 = document.getElementById("03").value=" ";
+    var value4 = document.getElementById("04").value=" ";
+    var value5 = document.getElementById("05").value=" ";
+    }
+
+    function myfun1(){
+    var value1 = document.getElementById("01").value;
+    var value2 = document.getElementById("02").value;
+    var value3 = document.getElementById("03").value;
+    var value4 = document.getElementById("04").value;
+    var value5 = document.getElementById("05").value;
+ 
+    table 
+    
+
+
+    const table = document.createElement("table");
+    const row   = document.createElement("tr");
+    
+
+    
+    }
+    
+    
+
+    
+</script>
+
+
+</body>
+</html>

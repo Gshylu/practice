@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <div id="addItem">
+        <p>Add Item</p>
+        <form action="">
+            <input type="text" name="listItem" id="item">
+            <button type="button" onclick="addItem()">Add</button>
+        </form>
+    </div>
+
+    <div id="toDoList"></div>
+    <div id="completeTask"></div>
+    
+
+<script>
+     
+        var tasks=[]
+        var toDoList =document.getElementById("toDoList");
+        function addItem(){
+            var item =document.getElementById("item").value;
+          tasks.push(item)
+          refreshList()
+        }
+        function refreshList(){
+
+            toDoList.innerHTML ="<p>To Do List</p>"
+            for(i of tasks){
+            var division = document.createElement("div")
+            var input= document.createElement("input");
+            input.setAttribute("type","text");
+            input.setAttribute("disabled",true);
+            input.setAttribute("class","input1");
+            input.setAttribute("name",i);
+            input.setAttribute("value",i);
+            input.setAttribute("id","todo");
+            var btn1 = document.createElement("button")
+            btn1.setAttribute("type","button");
+            btn1.setAttribute("name",i);
+            btn1.setAttribute("class","btn1");
+            btn1.setAttribute("value",i);
+            btn1.innerHTML ="Delete";
+            btn1.addEventListener('click',function(){
+                 this.parentElement.remove();
+                 tasks.splice(tasks.indexOf(i),1);
+            });
+            var btn2 = document.createElement("button")
+            btn2.setAttribute("type","button");
+            btn2.setAttribute("name",i);
+            btn2.setAttribute("class","btn2");
+            btn2.innerHTML ="Edit";
+            btn2.addEventListener('click',function(){
+                
+               if(this.value.length >= 0) { 
+                 document.getElementById("todo").disabled = false; 
+                } else { 
+                document.getElementById("todo").disabled = true;
+            
+                }
+            });
+            var btn3 = document.createElement("button")
+            btn3.setAttribute("type","button");
+            btn3.setAttribute("name",i);
+            btn3.setAttribute("class","btn3");
+            btn3.innerHTML ="proceed";
+            btn3.addEventListener('click',function(){
+            var tasks=[]
+            var  store = document.getElementById("todo").value;
+            tasks.push(store);
+            var completeTask = document.getElementById("completeTask");
+            completeTask.innerHTML ="<p>Complete Task</p>"
+            for(i of tasks){
+            var division1 = document.createElement("div")
+            var input1= document.createElement("input");
+            input1.setAttribute("type","checkbox");
+            input1.setAttribute("class","input1");
+            input1.setAttribute("name",i);
+            input1.setAttribute("value",i);
+            input1.setAttribute("id","todo1");
+            var checkbox = document.createElement("checkbox");
+            checkbox.setAttribute("type","checkbox");
+            checkbox.setAttribute("name",i);
+            checkbox.setAttribute("class","checkbox");
+            checkbox.addEventListener('checked',function(){
+                alert("Thank you shop again");
+           });}
+         
+        });
+
+    }
+        
+          
+            
+            division.appendChild(input)
+            division.appendChild(btn1)
+            division.appendChild(btn2)
+            division.appendChild(btn3)
+            toDoList.appendChild(division)
+
+           
+            division1.appendChild(input1)
+            division1.appendChild(checkbox)
+            completeTask.appendChild(division1)
+            
+            
+        
+         
+
+            
+
+            
+          
+           
+            
+            
+            }  
+
+            console.log(completeTask);
+        
+    
+</script>
+
+</body>
+</html>

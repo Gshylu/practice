@@ -1,0 +1,61 @@
+<html>
+    <head>
+      <script src="https://kit.fontawesome.com/0d1f84cb15.js" crossorigin="anonymous"></script>
+    <style> 
+   @counter-style myMarkers {
+        system:cyclic;
+	      symbols:  "🤓" "🤪" "😆""🐳" "🦢" "😏" "😂" "🙂" "😀" "😃" "🐾" "🐬"  "👤" "✉️" "⏰" "⌚" "🍕" "🥪" "😎" "😊" "😄" "😁" "🤣" "😉" "😍" "🤩" "☺️" "😛" "😌" "🥸";
+       /* symbols: url(owl.svg);*/
+        suffix: "  ";
+   }
+    
+      ul  {
+        list-style: myMarkers;
+       
+      }
+      
+      li:hover{
+        color:"red";
+        background-color: aqua;
+       
+   
+      }
+      
+      
+    </style>
+    </head>
+<body>
+  <div class="List">
+       <ul id="List">
+        
+       </ul>
+    </div>
+   
+   <script>
+            var n1 = 0;  
+            var n2 = 1;  
+            for(var i=0;i<20;i++){  
+            var n3 = n1+n2;
+            console.log(n3)
+            n1=n2;
+            n2=n3;   
+                
+            var li = document.createElement("li");
+            
+            var inputValue = n3;
+            var text = document.createTextNode(inputValue);
+            li.appendChild(text);
+            document.getElementById("List").appendChild(li); 
+           }
+        
+      
+      
+   
+
+           
+        
+     
+
+        </script>
+    </body>
+</html>

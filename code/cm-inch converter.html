@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <h1> cm-inch converter</h1>
+    
+    <button type="submit" onClick="btn1()">Convert to cm</button>
+    <input type="text" id="text">
+    <button type="submit" onClick="btn2()">Convert to inch</button>
+    <div id="result"></div>
+<script>
+    function btn1(){
+      const Elem = document.getElementById("text").value;
+      const cal = Elem * 2.54 +"cm";
+      const text = document.createElement("div");
+      text.innerHTML= cal;
+      document.getElementById("result").appendChild(text)
+    }
+    function btn2(){
+      const Elem = document.getElementById("text").value;
+      const cal = Elem *  0.3937007874 +"inch";
+      const text = document.createElement("div");
+      text.innerHTML= cal;
+      document.getElementById("result").appendChild(text)
+    }
+
+ 
+  </script>
+  </body>
+  </html>
+

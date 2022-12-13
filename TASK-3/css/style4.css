@@ -1,0 +1,18 @@
+body{
+    background-image: url(http://pavbca.com/walldb/original/9/2/5/501250.jpg);
+   padding:50px;
+  }
+.div{
+
+    position:absolute;
+    color:black;
+    color:white;
+    border-radius: 20px;
+    left:50%;
+    height:500px;
+    width:500px;
+
+}
+.us{
+    color:red;
+}

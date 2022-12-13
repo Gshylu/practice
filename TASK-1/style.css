@@ -1,0 +1,89 @@
+.form1{
+    border-radius:20px;
+    padding:5px;
+    background-color:white;
+    border-top:20px solid rgb(140, 30, 173);
+    border-bottom:1px solid whitesmoke;
+    text-align: center;
+
+}
+
+.form2{
+   
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    border:1px solid whitesmoke;
+    
+}
+.form3{
+
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    border:1px solid whitesmoke;
+
+   
+
+}
+.form4{
+
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    border:1px solid whitesmoke;
+
+}
+.form5{
+ 
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    border:1px solid whitesmoke;
+
+}
+.form6{
+ 
+
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    border:1px solid whitesmoke;
+
+}
+
+.div{
+    
+    border-radius:20px;
+    height:50vh;
+    width:50vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    background-color:1px solid whitesmoke;
+    
+    
+}
+.btn{
+    background-color:rgb(140, 30, 173) ;
+    padding:10px;
+    border-radius:5px;
+    color:white;
+    border:1px solid rgb(140, 30, 173);
+  
+}
+body{
+    background-color:rgb(238, 227, 248);
+}
+
+.email,.fname,.lname,.num{
+    width: 300px;
+	border: 0;
+	outline: 0;
+	border-bottom: 1.5px solid #DCD7D7;
+	font-size: 15px;
+}

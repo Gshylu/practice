@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      padding:50px;
+    }
+  </style>
+</head>
+<body>
+<div class="sub">
+<button  class="btn" type="submit">submit</button>
+
+
+<script>
+ var btn=document.querySelector("btn");
+ var position;
+ btn.addEventListener("mouseover",function(){
+  position ? (position = 0) : (position = 150);
+  btn.style.transfrom = `translate(${position}px,0px)`;
+  btn.style.transition = "all 0.3s ease";
+ });
+</script>
+</div>
+       
+<script>
+
+/* 
+ <div id="receipt"></div>
+
+const receipt = document.getElementById('receipt');
+
+  function displayReceipt(cartArray) {
+    receipt.innerHTML = '';
+
+    cartArray.forEach(function (item) {
+      const receiptLine = document.createElement('div');
+      receiptLine.innerText = item.name + ' $' + item.price + ' * ' + item.quantity;
+      receipt.appendChild(receiptLine);
+    });
+
+    // You can also calculate the total using just the loop above, but I like
+    // to separate them out so each loop does one thing.
+    let cartTotal = 0;
+    cartArray.forEach(function (item) {
+      cartTotal = cartTotal + item.price * item.quantity;
+    });
+
+    const totalLine = document.createElement('div');
+    totalLine.innerText = 'Cart total = $' + cartTotal;
+    receipt.appendChild(totalLine);
+  }
+
+  displayReceipt([
+    { name: 'Apple', price: 4, quantity: 2 },
+    { name: 'Orange', price: 3, quantity: 3 }
+  ]);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function cartTotal(cartArray) {
+  let total = 0;
+
+  cartArray.forEach(function (item) {
+    total = total + item.price * item.quantity;
+  });
+
+  console.log(total);
+}
+cartTotal([
+  { name: 'Apple', price: 4, quantity: 2 },
+  { name: 'Orange', price: 3, quantity: 3 }
+]);
+
+
+*/
+
+
+  /*    <input type="text" id="text">
+        <button id="btn" type="submit" onClick="mytext()">add</button>
+   function mytext(){
+    const elm = document.getElementById("text").value;
+    const div = document.createElement("div")
+    div.innerText = elm;
+    document.body.appendChild(div);
+   }
+*/
+
+
+/*
+<div id="counter">0</div>
+        <button type="submit" onClick="up()">Up</button>
+        <button type="submit" onClick="down()">down</button>
+   var count = 0;
+  function up(){
+
+  for(let i=0;i<1;i++){
+    count = count + 1;
+  document.getElementById("counter").innerHTML=count}
+  }
+  var count = 0;
+  function down(){
+
+  for(let i=0;i<1;i++){
+    count = count - 1;
+  document.getElementById("counter").innerHTML=count}
+  }
+*/
+
+
+
+
+
+
+/*<button id="todo-button" onClick="mybutton()">button</button>
+function mybutton(){
+const Elem = document.getElementById("todo-button")
+Elem.innerText="Done"
+}
+*/
+
+
+
+
+
+/*let todo1 = 'Get groceries';
+let todo2 = 'Wash car';
+let todo3 = 'Make dinner';
+
+let element = document.createElement('div');
+element.innerText = todo3;
+document.body.appendChild(element);
+
+element = document.createElement('div');
+element.innerText = todo2;
+document.body.appendChild(element);
+
+element = document.createElement('div');
+element.innerText = todo1;
+document.body.appendChild(element); */
+
+
+
+/*
+function greeting(firstName) {
+  console.log('hello ' + firstName);
+}
+greeting('Simon');
+
+
+
+
+function toUpper(str) {
+  console.log(str.toUpperCase());
+}
+toUpper('Simon');
+
+
+
+
+function convert(number) {
+  console.log(number * 2.54);
+}
+convert(2);
+
+
+
+function new12(num ,str){
+    console.log(str + " is " + num)
+
+}new12(20 , "shylu")
+*/
+
+
+
+/*function toUpper(stringArr) {
+  let result = [];
+
+  stringArr.forEach(function (str) {
+    result.push(str.toUpperCase());
+  });
+
+  console.log(result);
+}
+toUpper(['hello', 'world']);*/
+
+
+
+/*
+ var Array = [1 , 2 , 3, 4, 5];
+ let result=[];
+ Array.forEach(function(items){
+ result.push(items);
+ console.log(items) })
+ */
+ 
+
+
+
+ /*
+
+ function arrayDouble(stringArr) {
+  let result = [];
+
+  stringArr.forEach(function (str) {
+    result.push(str);
+   result.push(str);
+  });
+
+  console.log(result);
+}
+arrayDouble(['bark', 'meow']);*/
+
+
+
+
+
+
+
+
+
+
+
+/*function arraySum(numArray) {
+  let total = 0;
+
+  numArray.forEach(function (num) {
+    total = total + num;
+  });
+
+  console.log(total);
+}
+arraySum([1, 2, 3]);
+arraySum([5, -2, 7, 0]);
+*/
+
+</script>
+</body></html>

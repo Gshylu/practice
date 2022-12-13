@@ -1,0 +1,100 @@
+
+
+body{
+
+    
+    
+    margin:0;
+    border:0;
+    background-image: url(http://pavbca.com/walldb/original/9/2/5/501250.jpg);
+   
+ 
+
+  }
+  
+
+.div12{
+
+height:400px;
+width:300px;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+padding:20px;
+border-radius: 20px;
+box-shadow:3px 3px  3px 4px black;
+background-color: white;
+
+}
+.div1{
+
+padding-left:30%; 
+color: red;
+
+
+}
+.div2{
+    border-radius:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20%; 
+   
+}
+.sign{
+    position: relative;
+    left:20%;
+    background-color: blue;
+    border-radius:20px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:0;
+    box-shadow:3px 3px 4px greenyellow;
+    
+   
+    
+    
+}
+
+.userid,.password{
+    width:175px;
+	border: 0;
+	outline: 0;
+	border-bottom: 1.5px solid #DCD7D7;
+	font-size: 15px;
+    padding:5px;
+    
+}
+
+.link1{
+    position: relative;
+    left:25%;
+    outline:0;
+    border:0;
+    background-color: white;
+    color: red;
+}
+.link2{
+    position: relative;
+    outline:0;
+    border:0;
+    background-color: white; 
+    color: red;
+}
+
+.btn1{
+    position:absolute;
+    left:90%;
+    background-color: rgb(3, 3, 83);
+    color:white;
+    padding:5px;
+    border-radius:5px;
+  }
+
+header{
+    padding:30px;
+}

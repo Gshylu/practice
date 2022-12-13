@@ -1,0 +1,64 @@
+
+li {
+    display: inline;
+   
+    padding:5px;
+
+  }
+
+
+.div1{
+    padding:8px;
+    color:white;
+    
+}
+body{
+  background-image: url(http://pavbca.com/walldb/original/9/2/5/501250.jpg);
+}
+.div2{
+  
+  color:white;
+  
+}
+
+.btn1{
+  position:absolute;
+  left:66%;
+  background-color: rgb(3, 3, 83);
+  color:white;
+  padding:5px;
+  border-radius:5px;
+}
+.btn2{
+  position:absolute;
+  left:69%;
+  background-color: rgb(3, 3, 83);
+  color:white;
+  padding:5px;
+  border-radius:5px;
+}
+.btn3{
+  position:absolute;
+  left:78%;
+  background-color: rgb(3, 3, 83);
+  color:white;
+  padding:5px;
+  border-radius:5px;
+}
+.btn4{
+  position:absolute;
+  left:84%;
+  background-color: rgb(3, 3, 83);
+  color:white;
+  padding:5px;
+  border-radius:5px;
+}
+.btn5{
+  position:absolute;
+  left:91%;
+  background-color: rgb(3, 3, 83);
+  color:white;
+  padding:5px;
+  border-radius:5px;
+}
+

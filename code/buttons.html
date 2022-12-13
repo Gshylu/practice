@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <button type="submit" onClick="myfun('Apple')">Apple</button>
+  <button type="submit" onClick="myfun('Tomato')">Tomato</button>
+  <button type="submit" onClick="myfun('Eggs')">Eggs</button>
+  <button type="submit" id="btn4" onClick="remove()">Clear</button>
+  <div id="cart"></div>
+
+
+
+
+<script>
+
+  function myfun(food){
+    const Elem1 = document.createElement("div");
+  Elem1.innerText = food;
+ 
+  document.getElementById("cart").appendChild(Elem1)
+    
+  }
+  function remove(){
+    const Elem = document.getElementById("cart").innerHTML=" ";
+  }
+  
+
+  /*
+function btn1(){
+  const Elem1 = document.createElement("div");
+  Elem1.innerText = "Apple"
+ 
+  document.getElementById("cart").appendChild(Elem1)
+}
+function btn2(){
+  const Elem2 = document.createElement("div");
+  Elem2.innerText = "Tomato"
+ 
+  document.getElementById("cart").appendChild(Elem2)
+}
+function btn3(){
+  const Elem3 = document.createElement("div");
+  Elem3.innerText = "Eggs"
+  document.getElementById("cart").appendChild(Elem3)
+}
+
+function remove(){
+  const Elem = document.getElementById("cart").innerHTML=" ";
+}
+*/
+

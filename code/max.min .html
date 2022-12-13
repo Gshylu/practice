@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function max(numArray) {
+  let max = -Infinity;
+
+  numArray.forEach(function (num) {
+    // You can have an if statement without the else
+    if (num > max) {
+      max = num;
+    }
+  });
+
+  return max;
+}
+max([1, 5, -2, 4, 3, 5, 0]);
+
+function min(numArray) {
+  let min = Infinity;
+
+  numArray.forEach(function (num) {
+    if (num < min) {
+      min = num;
+    }
+  });
+
+  return min;
+}
+min([1, 5, -2, 4, 3, 5, 0]);
+
+
+
+    </script>
+</body>
+</html>
